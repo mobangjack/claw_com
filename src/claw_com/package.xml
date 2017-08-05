@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+  <name>claw_com</name>
+  <version>1.0.0</version>
+  <description>The claw_com package</description>
+  <maintainer email="mobangjack@foxmail.com">Jack Mo</maintainer>
+
+  <license>Apache 2.0</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  
+  <build_depend>roscpp</build_depend>
+  <build_depend>std_msgs</build_depend>
+
+  <run_depend>roscpp</run_depend>
+  <run_depend>std_msgs</run_depend>
+
+</package>

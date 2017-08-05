@@ -1,0 +1,17 @@
+<launch>
+
+	<!-- run claw_read node -->
+	<node pkg="claw_com" type="claw_read" name="claw_read" output="screen">
+	<param name="serial_port"         type="string" value="/dev/ttyUSB0"/>  
+  <param name="serial_baudrate"     type="int"    value="115200"/>
+  <param name="spin_rate"           type="int"    value="30"/>
+	</node>
+	
+	<!-- run claw_write node -->
+	<node pkg="claw_com" type="claw_write" name="claw_write" output="screen">
+	<param name="serial_port"         type="string" value="/dev/ttyUSB0"/>  
+  <param name="serial_baudrate"     type="int"    value="115200"/>
+  <param name="spin_rate"           type="int"    value="30"/>
+	</node>
+
+</launch>
